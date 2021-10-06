@@ -63,8 +63,8 @@
 //#define HW_SOURCE "hw_49.c"
 //#define HW_HEADER "hw_49.h"
 
-//#define HW_SOURCE "hw_410.c" // Also for 4.11 and 4.12
-//#define HW_HEADER "hw_410.h" // Also for 4.11 and 4.12
+#define HW_SOURCE "hw_410.c" // Also for 4.11 and 4.12
+#define HW_HEADER "hw_410.h" // Also for 4.11 and 4.12
 
 //#define HW_SOURCE "hw_gesc.c"
 //#define HW_HEADER "hw_gesc.h"
@@ -72,10 +72,10 @@
 // Mark3 version of HW60 with power switch and separate NRF UART.
 //#define HW60_IS_MK3
 //#define HW60_IS_MK4
-#define HW60_IS_MK5
+//#define HW60_IS_MK5
 
-#define HW_SOURCE "hw_60.c"
-#define HW_HEADER "hw_60.h"
+//#define HW_SOURCE "hw_60.c"
+//#define HW_HEADER "hw_60.h"
 
 //#define HW_SOURCE "hw_r2.c"
 //#define HW_HEADER "hw_r2.h"
@@ -103,7 +103,7 @@
 
 // Second revision with separate UART for NRF51
 //#define HW75_300_REV_2
-#define HW75_300_REV_3
+//#define HW75_300_REV_3
 
 //#define HW_SOURCE "hw_75_300.c"
 //#define HW_HEADER "hw_75_300.h"
@@ -300,6 +300,9 @@
 #endif
 #ifndef AS504x_USE_SW_MOSI_PIN
 #define AS504x_USE_SW_MOSI_PIN 		0
+#endif
+#ifndef BISSC_USE_HW_SPI_PINS
+#define BISSC_USE_HW_SPI_PINS		1
 #endif
 
 /*
